@@ -104,7 +104,7 @@ class RankCountVectorizer(object):
                 print(
                     "Column: %s\tCardinality: %s" % (col.rjust(20), df[col].nunique())
                 )
-            df[col].fillna(-999, inplace=True)
+            df[col] = df[col].fillna(-999)
             df[col] = df[col].apply(
                 lambda x: self.vec[col][x] if x in self.vec[col] else 1
             )
