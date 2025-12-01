@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "boruta>=0.4.3",
     "catboost>=1.2.8",
+    "category-encoders>=2.9.0",
     "fastparquet>=2024.11.0",
     "feature-engine>=1.9.3",
     "imbalanced-learn==0.14.0",
@@ -21,5 +22,6 @@ dependencies = [
     "scikit-learn==1.7.2",
     "scikit-plot>=0.3.7",
     "seaborn==0.13.2",
+    "shap>=0.49.1",
     "xgboost>=3.1.0",
 ]
